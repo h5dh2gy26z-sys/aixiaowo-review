@@ -1,0 +1,31 @@
+table_id: method_comparison
+description: "Cross-paper comparison table for methods/approaches."
+columns:
+  - id: approach_name
+    type: string
+    required: true
+  - id: paper_ids
+    type: list[string]
+    required: true
+  - id: problem_setting
+    type: string
+    required: true
+  - id: key_idea
+    type: string
+    required: true
+  - id: assumptions
+    type: string
+    required: false
+  - id: strengths
+    type: string
+    required: true
+  - id: weaknesses
+    type: string
+    required: true
+  - id: compute_cost
+    type: string
+    required: false
+  - id: reproducibility
+    type: string
+    required: false
+

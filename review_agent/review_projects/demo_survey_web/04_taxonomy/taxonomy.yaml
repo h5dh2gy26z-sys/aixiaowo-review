@@ -1,0 +1,71 @@
+taxonomy_name: Abstract-derived taxonomy (v0.1)
+version: 0.1.0
+nodes:
+- id: root
+  name: Root
+  definition: Top-level grouping
+  inclusion_rules: []
+  exclusion_rules: []
+  children:
+  - id: t01_federated_learning
+    name: Federated Learning
+    definition: 'Abstract-derived cluster for: federated learning'
+    inclusion_rules:
+    - 'mentions: federated, learning'
+    exclusion_rules: []
+    children: []
+  - id: t02_graph_neural
+    name: Graph Neural
+    definition: 'Abstract-derived cluster for: graph neural'
+    inclusion_rules:
+    - 'mentions: graph, neural'
+    exclusion_rules: []
+    children: []
+  - id: t03_neural_networks
+    name: Neural Networks
+    definition: 'Abstract-derived cluster for: neural networks'
+    inclusion_rules:
+    - 'mentions: neural, networks'
+    exclusion_rules: []
+    children: []
+  - id: t04_learning_systems
+    name: Learning Systems
+    definition: 'Abstract-derived cluster for: learning systems'
+    inclusion_rules:
+    - 'mentions: learning, systems'
+    exclusion_rules: []
+    children: []
+  - id: t05_systems_algorithms
+    name: Systems Algorithms
+    definition: 'Abstract-derived cluster for: systems algorithms'
+    inclusion_rules:
+    - 'mentions: systems, algorithms'
+    exclusion_rules: []
+    children: []
+  - id: t06_algorithms_tutorial
+    name: Algorithms Tutorial
+    definition: 'Abstract-derived cluster for: algorithms tutorial'
+    inclusion_rules:
+    - 'mentions: algorithms, tutorial'
+    exclusion_rules: []
+    children: []
+  - id: t07_tutorial_federated
+    name: Tutorial Federated
+    definition: 'Abstract-derived cluster for: tutorial federated'
+    inclusion_rules:
+    - 'mentions: tutorial, federated'
+    exclusion_rules: []
+    children: []
+  - id: t08_learning_enables
+    name: Learning Enables
+    definition: 'Abstract-derived cluster for: learning enables'
+    inclusion_rules:
+    - 'mentions: learning, enables'
+    exclusion_rules: []
+    children: []
+  - id: t99_other
+    name: Other / General
+    definition: Fallback node when abstracts do not strongly match any cluster.
+    inclusion_rules: []
+    exclusion_rules: []
+    children: []

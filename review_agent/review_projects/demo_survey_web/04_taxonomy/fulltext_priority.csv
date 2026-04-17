@@ -1,0 +1,4 @@
+paper_id,priority,reason,extraction_needs
+P002,1,recent_year=2023; abstract_len=367,"problem/task definition, method details (architecture/algorithm), datasets, metrics, compute/training setup, reproducibility (code, seeds, hyperparams), limitations/failure modes"
+P001,2,recent_year=2021; abstract_len=378,"problem/task definition, method details (architecture/algorithm), datasets, metrics, compute/training setup, reproducibility (code, seeds, hyperparams), limitations/failure modes"
+P003,3,recent_year=2020; abstract_len=310,"problem/task definition, method details (architecture/algorithm), datasets, metrics, compute/training setup, reproducibility (code, seeds, hyperparams), limitations/failure modes"

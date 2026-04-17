@@ -1,0 +1,12 @@
+project_slug: demo_survey_web
+title_working: "Working title"
+review_type: survey_tutorial
+topic_statement: |
+  Write 3–8 sentences describing the exact topic and boundaries.
+audience: "Who should read this (e.g., CS grad students, engineers, researchers)?"
+scope_in:
+  - "In-scope item 1"
+scope_out:
+  - "Out-of-scope item 1"
+target_venues:
+  - "IEEE COMST (optional)"

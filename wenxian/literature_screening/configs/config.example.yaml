@@ -1,0 +1,54 @@
+project:
+  name: "example-screening-run"
+  output_dir: "../data/output/example_run"
+  save_raw_response: true
+  save_intermediate_files: true
+
+input:
+  input_files:
+    - "../data/input/example_1.bib"
+    - "../data/input/example_2.ris"
+  encoding: "auto"
+
+dedup:
+  enabled: true
+  strict_doi_match: true
+  normalized_title_exact_match: true
+  fuzzy_title_match: false
+
+screening:
+  batch_size: 10
+  target_include_count: 50
+  stop_when_target_reached: true
+  allow_uncertain: true
+  retry_times: 2
+  request_timeout_seconds: 120
+
+criteria:
+  topic: "请替换为你的研究主题"
+  inclusion:
+    - "请替换为纳入标准 1"
+    - "请替换为纳入标准 2"
+    - "请替换为纳入标准 3"
+  exclusion:
+    - "请替换为排除标准 1"
+    - "请替换为排除标准 2"
+    - "请替换为排除标准 3"
+
+model:
+  provider: "deepseek"
+  model_name: "deepseek-chat"
+  api_base_url: "https://api.deepseek.com/v1"
+  api_key_env: "DEEPSEEK_API_KEY"
+  temperature: 0.2
+
+report:
+  export_included_ris: true
+  export_excluded_ris: false
+  export_unused_ris: true
+  export_included_bib: false
+  export_excluded_bib: false
+  export_unused_bib: false
+  included_report_format: "md"
+  excluded_report_format: "md"
+  summary_format: "json"

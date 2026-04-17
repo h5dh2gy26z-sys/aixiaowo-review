@@ -1,0 +1,4 @@
+paper_id,decision,reason_tag,notes
+P001,include,core_topic,"Foundational taxonomy candidate (GNN)."
+P002,include,core_topic,"Attention/transformer family; strong recency signal."
+P003,include,core_topic,"Systems + privacy dimension; complements model-centric taxonomy."

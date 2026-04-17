@@ -1,0 +1,22 @@
+table_id: dataset_benchmark
+description: "Datasets/benchmarks commonly used in the field."
+columns:
+  - id: dataset_name
+    type: string
+    required: true
+  - id: tasks
+    type: list[string]
+    required: true
+  - id: size
+    type: string
+    required: false
+  - id: license
+    type: string
+    required: false
+  - id: typical_metrics
+    type: list[string]
+    required: false
+  - id: representative_paper_ids
+    type: list[string]
+    required: true
+

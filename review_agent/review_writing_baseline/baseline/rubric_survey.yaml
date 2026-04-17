@@ -1,0 +1,115 @@
+# Measurable rubric for Survey/Tutorial review writing.
+# This is intentionally "artifact-driven" so it can be checked automatically.
+#
+# severities:
+# - blocker: must pass before drafting is considered "usable"
+# - warn: recommended; can be deferred
+
+version: "0.1.0"
+review_type: "survey_tutorial"
+
+checks:
+  - id: B-PROJECT-00
+    severity: blocker
+    title: "Project config exists"
+    type: file_exists
+    params:
+      path: "00_project.yaml"
+
+  - id: B-SEARCH-01
+    severity: blocker
+    title: "Search terms artifact exists"
+    type: file_exists
+    params:
+      path: "01_search_terms.yaml"
+
+  - id: B-IMPORT-02
+    severity: blocker
+    title: "Canonical papers CSV exists"
+    type: file_exists
+    params:
+      path: "02_import/papers_canonical.csv"
+
+  - id: B-IMPORT-02-COLS
+    severity: blocker
+    title: "Canonical papers CSV has required columns"
+    type: csv_has_columns
+    params:
+      path: "02_import/papers_canonical.csv"
+      required_columns:
+        - paper_id
+        - title
+        - year
+        - abstract
+        - doi
+
+  - id: B-SCREEN-03
+    severity: blocker
+    title: "Abstract screening decisions exist"
+    type: file_exists
+    params:
+      path: "03_screening/abstract_decisions.csv"
+
+  - id: W-SCREEN-03-SUMMARY
+    severity: warn
+    title: "Screening summary exists (recommended)"
+    type: file_exists
+    params:
+      path: "03_screening/screening_summary.json"
+
+  - id: B-TAXO-04
+    severity: blocker
+    title: "Taxonomy exists"
+    type: file_exists
+    params:
+      path: "04_taxonomy/taxonomy.yaml"
+
+  - id: W-TAXO-04-CLASSIFY
+    severity: warn
+    title: "Paper-to-taxonomy classification exists (recommended)"
+    type: file_exists
+    params:
+      path: "04_taxonomy/paper_classification.csv"
+
+  - id: W-FULLTEXT-PRIORITY
+    severity: warn
+    title: "Full-text priority list exists (recommended)"
+    type: file_exists
+    params:
+      path: "04_taxonomy/fulltext_priority.csv"
+
+  - id: W-TABLE-FIG-PLAN
+    severity: warn
+    title: "Table/figure plan exists (recommended)"
+    type: file_exists
+    params:
+      path: "04_taxonomy/table_figure_plan.yaml"
+
+  - id: B-DRAFT-06-OUTLINE
+    severity: blocker
+    title: "Outline exists"
+    type: file_exists
+    params:
+      path: "06_draft/00_outline.md"
+
+  - id: W-DRAFT-SECTION-FILES
+    severity: warn
+    title: "Draft section files exist (recommended)"
+    type: files_exist_any
+    params:
+      paths:
+        - "06_draft/10_intro.md"
+        - "06_draft/20_taxonomy.md"
+        - "06_draft/30_comparison.md"
+        - "06_draft/40_challenges.md"
+        - "06_draft/50_future.md"
+        - "06_draft/90_conclusion.md"
+
+  - id: W-RECENCY-SHARE
+    severity: warn
+    title: "Recency share of references (heuristic)"
+    type: papers_recency_share
+    params:
+      path: "02_import/papers_canonical.csv"
+      years_window: 5
+      min_share: 0.5

@@ -1,0 +1,45 @@
+version: 0.1.0
+tables:
+- id: T1_method_comparison
+  title: Method comparison (by taxonomy leaf)
+  schema: method_comparison
+  notes: Populate after full-text extraction; start from representative papers per
+    taxonomy node.
+- id: T2_dataset_benchmark
+  title: Dataset / benchmark overview
+  schema: dataset_benchmark
+  notes: Collect dataset name, size, split, tasks, metrics, common baselines.
+- id: T3_decision_matrix
+  title: Practical decision matrix
+  schema: decision_matrix
+  notes: When to choose which approach; include constraints like compute, latency,
+    data availability.
+- id: T4_taxonomy_overview
+  title: Taxonomy overview table
+  schema: taxonomy_overview
+  notes: One row per taxonomy node; short definition + representative papers.
+figures:
+- id: F1_taxonomy_tree
+  title: Taxonomy tree
+  notes: Rendered from 04_taxonomy/taxonomy.yaml.
+- id: F2_pipeline
+  title: Workflow pipeline figure
+  notes: 'Show end-to-end stages: screening -> taxonomy -> full-text -> tables ->
+    draft -> traceability.'
+taxonomy_nodes:
+- id: t01_federated_learning
+  name: Federated Learning
+- id: t02_graph_neural
+  name: Graph Neural
+- id: t03_neural_networks
+  name: Neural Networks
+- id: t04_learning_systems
+  name: Learning Systems
+- id: t05_systems_algorithms
+  name: Systems Algorithms
+- id: t06_algorithms_tutorial
+  name: Algorithms Tutorial
+- id: t07_tutorial_federated
+  name: Tutorial Federated
+- id: t08_learning_enables
+  name: Learning Enables

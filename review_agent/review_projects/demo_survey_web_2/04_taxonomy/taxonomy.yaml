@@ -1,0 +1,10 @@
+taxonomy_name: "demo taxonomy"
+version: "0.1.0"
+nodes:
+  - id: root
+    name: "Root"
+    definition: "Top-level grouping"
+    inclusion_rules: []
+    exclusion_rules: []
+    children: []
+

@@ -1,0 +1,17 @@
+version: "0.1.0"
+reason_tags:
+  - id: out_of_scope_domain
+    description: "Not in the domain/area defined by scope_in."
+  - id: wrong_problem
+    description: "Addresses a different research question/task than the review topic."
+  - id: non_method_paper
+    description: "Not a methods/approach paper (e.g., editorial, perspective) for this survey."
+  - id: insufficient_detail
+    description: "Abstract lacks enough detail to decide; keep as uncertain if potentially relevant."
+  - id: not_peer_reviewed
+    description: "Not peer reviewed (if this matters for the venue/goal)."
+  - id: duplicate
+    description: "Duplicate record (same DOI/title) relative to another paper_id."
+  - id: other
+    description: "Does not fit other tags; add a note."
+

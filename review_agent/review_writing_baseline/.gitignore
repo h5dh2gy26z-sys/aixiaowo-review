@@ -1,0 +1,3 @@
+# Keep raw downloads out of git by default.
+sources/raw/
+

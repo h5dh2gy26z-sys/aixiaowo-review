@@ -1,0 +1,113 @@
+# Sources manifest (authoritative first; keep summaries local, not full-text copies).
+# Field meanings:
+# - local_policy:
+#     - summary_only: store link + distilled notes; no full page copy
+#     - raw_allowed: store a local raw copy (only when license/terms clearly allow)
+
+- id: nature_reviews_how_to_write_2024
+  title: "How to write a good review article"
+  org_or_venue: "Nature Reviews"
+  year: 2024
+  url: "https://www.nature.com/articles/s44222-024-00256-4"
+  scope: ["survey_tutorial", "structure", "figures_tables", "critical_synthesis"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/nature_reviews_how_to_write_2024.md"
+
+- id: nature_rev_content_types
+  title: "Nature Reviews journal content types (Review / Technical Review / Roadmap, etc.)"
+  org_or_venue: "Nature Reviews"
+  year: 2024
+  url: "https://www.nature.com/nrct/content"
+  scope: ["venue_expectations", "article_types"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/nature_reviews_content_types.md"
+
+- id: nature_reviews_article_format_guide_pdf
+  title: "Nature Reviews article format guide: Review / Technical Review / Roadmap (PDF)"
+  org_or_venue: "Nature Reviews"
+  year: 2024
+  url: "https://www.nature.com/documents/natrev-articleformatguide-review.pdf"
+  scope: ["structure", "submission_checklist", "figures_tables"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/nature_reviews_format_guide.md"
+
+- id: elsevier_editor_guide_review_article
+  title: "Editor’s guide to writing a review article"
+  org_or_venue: "Elsevier Researcher Academy"
+  year: 2024
+  url: "https://researcheracademy.elsevier.com/writing-research/technical-writing-skills/editor-guide-writing-review-article"
+  scope: ["survey_tutorial", "structure", "scope_control", "critical_synthesis"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/elsevier_editor_guide_review_article.md"
+
+- id: ieee_comst_policies_guidelines
+  title: "IEEE Communications Surveys & Tutorials (COMST) policies & guidelines"
+  org_or_venue: "IEEE ComSoc / COMST"
+  year: 2025
+  url: "https://www.comsoc.org/publications/journals/ieee-comst/policies-guidelines"
+  scope: ["venue_expectations", "survey_tutorial", "ai_disclosure"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/ieee_comst_policies_guidelines.md"
+
+- id: ieee_comst_author_guidelines_pdf
+  title: "COMST author guidelines (PDF)"
+  org_or_venue: "IEEE ComSoc / COMST"
+  year: 2025
+  url: "https://www.comsoc.org/media/811/download"
+  scope: ["venue_expectations", "tables_taxonomy", "freshness_of_refs"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/ieee_comst_author_guidelines.md"
+
+- id: proceedings_ieee_preparing_your_paper
+  title: "Proceedings of the IEEE: preparing your paper (regular paper guidance)"
+  org_or_venue: "Proceedings of the IEEE"
+  year: 2024
+  url: "https://proceedingsoftheieee.ieee.org/resources/preparing-your-regular-paper/"
+  scope: ["venue_expectations", "survey_tutorial", "critical_evaluation"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/procieee_preparing_your_paper.md"
+
+- id: ieee_editorial_style_manual_2024
+  title: "IEEE Editorial Style Manual for Authors (PDF)"
+  org_or_venue: "IEEE Author Center"
+  year: 2024
+  url: "https://journals.ieeeauthorcenter.ieee.org/wp-content/uploads/sites/7/IEEE-Editorial-Style-Manual-for-Authors.pdf"
+  scope: ["style", "figures_tables", "terminology", "citations"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/ieee_editorial_style_manual_2024.md"
+
+- id: cacm_author_guidelines
+  title: "Communications of the ACM (CACM) author guidelines"
+  org_or_venue: "ACM / CACM"
+  year: 2024
+  url: "https://cacm.acm.org/author-guidelines/"
+  scope: ["readability", "broad_audience", "structure"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/cacm_author_guidelines.md"
+
+- id: prisma_2020_checklist
+  title: "PRISMA 2020 checklist"
+  org_or_venue: "PRISMA Statement"
+  year: 2020
+  url: "https://www.prisma-statement.org/prisma-2020-checklist"
+  scope: ["slr_only", "reporting_checklist"]
+  local_policy: "raw_allowed"
+  notes_path: "sources/notes/prisma_2020_checklist.md"
+
+- id: arxiv_update_se_slr_2020
+  title: "Guidelines for updating Systematic Literature Reviews in Software Engineering (preprint)"
+  org_or_venue: "arXiv"
+  year: 2020
+  url: "https://arxiv.org/abs/2006.05542"
+  scope: ["slr_only", "update_workflows", "search_strategy"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/arxiv_update_se_slr_2020.md"
+
+- id: arxiv_quality_assessment_slr_2021
+  title: "Quality assessment in Systematic Literature Reviews (preprint)"
+  org_or_venue: "arXiv"
+  year: 2021
+  url: "https://arxiv.org/abs/2109.10134"
+  scope: ["slr_only", "quality_assessment", "checklists"]
+  local_policy: "summary_only"
+  notes_path: "sources/notes/arxiv_quality_assessment_slr_2021.md"

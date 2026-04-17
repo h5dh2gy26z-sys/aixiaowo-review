@@ -1,0 +1,16 @@
+table_id: decision_matrix
+description: "Decision-support table: when to use which approach and why."
+columns:
+  - id: scenario_or_constraint
+    type: string
+    required: true
+  - id: recommended_approaches
+    type: list[string]
+    required: true
+  - id: rationale
+    type: string
+    required: true
+  - id: evidence_paper_ids
+    type: list[string]
+    required: true
+

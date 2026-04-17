@@ -1,0 +1,16 @@
+table_id: taxonomy_overview
+description: "High-level taxonomy summary (categories, definitions, representative papers)."
+columns:
+  - id: taxonomy_node_id
+    type: string
+    required: true
+  - id: category_name
+    type: string
+    required: true
+  - id: definition
+    type: string
+    required: true
+  - id: representative_paper_ids
+    type: list[string]
+    required: true
+

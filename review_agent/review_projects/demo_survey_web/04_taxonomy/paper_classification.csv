@@ -1,0 +1,4 @@
+paper_id,taxonomy_node_id,confidence,rationale
+P003,t01_federated_learning,0.50,best match='federated learning' score=2 total=8
+P002,t99_other,0.20,no strong keyword match; fallback to Other
+P001,t02_graph_neural,0.65,best match='graph neural' score=2 total=4

@@ -1,0 +1,11 @@
+seed_terms:
+  - "term 1"
+synonyms:
+  "term 1":
+    - "synonym A"
+queries:
+  scopus: ""
+  wos: ""
+  pubmed: ""
+  cnki: ""
+

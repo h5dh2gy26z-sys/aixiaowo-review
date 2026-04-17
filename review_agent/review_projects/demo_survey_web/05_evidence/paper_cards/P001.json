@@ -1,0 +1,20 @@
+{
+  "paper_id": "P001",
+  "source_pdf": "P001.pdf",
+  "extraction_needs": "problem/task definition, method details (architecture/algorithm), datasets, metrics, compute/training setup, reproducibility (code, seeds, hyperparams), limitations/failure modes",
+  "method_summary": "",
+  "assumptions": [],
+  "datasets": [],
+  "metrics": [],
+  "compute": "",
+  "reproducibility": "",
+  "limitations": [],
+  "claims": [],
+  "evidence_pointers": [
+    {
+      "chunk_id": "P001:p1",
+      "page": 1
+    }
+  ],
+  "raw_text_snippet": ""
+}

@@ -1,0 +1,109 @@
+﻿序号,标题 (简略),决定,优先级,归类标签,简评/理由
+1,Multi-objective optimization... via active learning,✅ 保留,High,[数据-策略]  [应用-闭环],"亮点：结合了 Active Learning 和多目标优化，并实现了 ""ML预测 -> 合成 Co35Cr30Ni35"" 的实验闭环验证。适合 Ch.5 闭环发现。"
+2,Machine learning-aided phase and mechanical properties...,✅ 保留,High,[算法-创新]  [应用-力学],亮点：提出了一种由两层 Bayesian Shrinkage 方法组成的新算法框架来解决多重共线性问题，且包含实验验证。算法有创新性。
+3,Multi-objective Optimization-Oriented Generative Adversarial Design...,✅ 保留,High,[算法-生成]  [算法-GAN],亮点：使用了 NSGAN (非支配排序 GAN) 进行材料设计，属于进阶生成式模型应用，且发布了在线工具。适合 Ch.3.3 生成式设计。
+4,Prediction of phases in high entropy alloys using ML,✅ 保留,Med,[应用-相预测]  [数据-特征],经典：使用 XGBoost/RF/SVM 进行相预测，讨论了原子半径、混合焓等特征的重要性。适合作为相预测章节的基础文献。
+5,Exploring the relationship between lattice distortion and phase stability...,✅ 保留,Med,[应用-物理]  [解释性],"基础：利用 ML (SVM) 结合 DFT/热力学计算，探讨 ""晶格畸变 vs 相稳定性"" 的物理权衡。侧重于物理机制的解释。"
+6,Machine learning-based predictions of fatigue life...,✅ 保留,Med,[应用-力学],"拓展：关注 HEA 的 疲劳寿命 (Fatigue Life) 预测，相比于常见的硬度预测更具稀缺性。使用常规模型 (SVM, XGBoost)。"
+7,Support Vector Machine-Based Phase Prediction...,✅ 保留,Med,[应用-相预测],经典：标准的 SVM 相结构分类应用（注意：与序号 9 内容高度相似，可能是同一工作的不同版本，建议二选一或合并引用）。
+8,cardiGAN: A generative adversarial network model...,✅ 保留,High,[算法-生成]  [应用-闭环],亮点：明确使用了 GANs 进行合金成分生成，并实际制备了候选合金进行验证。非常典型的生成式设计闭环案例。
+9,Predicting path-dependent diffusion barrier spectra... via CNN,✅ 保留,High,[算法-深度]  [应用-物理],亮点：使用了 CNN (卷积神经网络) 来处理局部化学环境特征，预测空位迁移能。展示了深度学习在处理复杂局部结构中的优势。
+10,Phase Prediction... Using SVM and Bayesian Optimization,✅ 保留,Med,[应用-相预测],经典：SVM 结合贝叶斯优化 (BO) 调参。属于标准的优化流程应用（注：与序号 7 内容重复度极高，建议作为 SVM 优化案例引用）。
+11,Experimental and machine learning approaches to phase prediction...,✅ 保留,Med,[应用-相预测][算法-传统],"使用 SVM, XGBoost, DNN 等多种模型预测相结构，并进行了实验验证，属于扎实的经典应用，适合 Ch.4.1。"
+12,Supervised machine learning for corrosion... generative datasets,✅ 保留,High,[数据-预处理][算法-生成/逆向],亮点：使用了 GAN (生成对抗网络) 生成合成数据来解决腐蚀数据稀缺问题 (Data Augmentation)，符合“数据策略”高优先级标准。
+13,Deep learning in shock response... inverse microstructure design,✅ 保留,High,[算法-深度][算法-生成/逆向],亮点：提出了 CNN + GAN 的双向深度学习框架，实现了从微观结构到冲击响应的逆向设计，属于算法创新。
+14,Machine learning of hardness and composition in Al–Co–Cr–Fe...,✅ 保留,Med,[应用-力学性能][算法-传统],使用 XGBoost 等模型预测硬度，并对高硬度合金进行了实验制备与验证。标准的“预测-验证”流程，适合基础章节。
+15,Prediction of Hardness... in HEA Bonded Cemented Carbides...,✅ 保留,Med,[应用-力学性能][算法-传统],研究对象为 HEA 结合的硬质合金 (WC-HEA)，使用 RF/ANN 预测性能。属于 HEA 的复合材料应用扩展，方法较为传统。
+16,Machine learning assisted design... GAN and Active Learning...,✅ 保留,High,[数据-策略][算法-生成/逆向],亮点：结合了 GAN (数据增强) 和 Active Learning (主动学习) 策略筛选高硬度、低密度合金，完全符合“数据策略”高优标准。
+17,Phase prediction... using GAN and active learning based on small datasets,✅ 保留,High,[数据-策略][算法-生成/逆向],亮点：针对小样本问题，提出了 CGAN + Active Learning 的框架预测相结构，明确解决了“小数据”痛点。
+18,Rapid discovery of high hardness MPEAs using a GAN model,✅ 保留,High,[算法-生成/逆向][闭环验证],亮点：利用 GAN 在 18 元素空间中发现了比训练集硬度高 10% 的新成分，并用 DFT 解释了机理，是典型的“发现新材料”闭环案例。
+19,Application of ML Algorithms... With and Without PCA...,✅ 保留,High,[解释性/见解][算法-传统],亮点：明确使用了 SHAP 值来解释模型参数对预测结果的影响，符合“可解释性 (XAI)”的高优筛选标准。
+20,Accelerated discovery of corrosion-resistant... via data-augmented ML,✅ 保留,High,[数据-策略][算法-生成][应用-腐蚀],亮点：使用了 WGAN-GP (Wasserstein GAN) 进行数据增强以解决腐蚀数据稀缺问题，并发现了性能提升 20% 的新成分，是“小数据策略”的完美案例。
+21,Phase Identification... Guided by Explainable Machine Learning,✅ 保留,High,[解释性/见解][算法-生成][数据-策略],亮点：集大成者。既使用了 GAN 增强 Random Forest，又使用了 SHAP 进行可解释性分析。完全符合综述的高级要求。
+22,Integrating machine learning and DFT for hardness prediction...,✅ 保留,Med,[应用-力学性能][数据-特征],使用 DFT 计算数据作为输入训练 ML (RF/XGBoost)。虽然方法较经典，但展示了物理模拟与 ML 结合的流程，适合 Ch.4 力学性能章节。
+23,Enhancing phase characterization... Tree-Neural Ensemble Classifier (TNEC),✅ 保留,High,[算法-创新][应用-相预测],亮点：提出了一种特定的混合模型架构 TNEC (树模型+神经网络)， explicitly claims to outperform standard RF/SVM/XGBoost。属于“算法创新”类。
+24,Phase Formation in Vacuum Arc Melted... Insights From ML...,✅ 保留,Med,[应用-相预测][算法-传统],比较了 7 种分类器（KNN/ANN 最佳）。属于标准的 benchmark 研究，适合用来展示不同模型在相预测任务上的基准表现。
+25,ENHANCING MATERIAL PROPERTY PREDICTION...,✅ 保留,Med,[应用-力学性能][算法-传统],侧重于 SVM 在非等原子比 HEA 性能预测中的应用。虽无大创新，但可作为 SVM 优于其他模型的一个论据引用。
+26,Phase Prediction... by Various Machine Learning Modules...,✅ 保留,Med,[应用-相预测][算法-传统],标准的相结构分类研究（SS/IM/AM）。使用了多种经典算法对比，适合在综述中作为支持“决策树/SVM 适合相分类”的论据。
+27,Development of machine learning based models...,✅ 保留,Med,[应用-相预测][数据-特征],使用 Gradient Boosting 达到 >90% 准确率。特征工程部分提到“焓 (Enthalpy) 是最不显著的特征”，这一反直觉的结论值得在“特征工程”章节讨论。
+28,"Deep learning-based phase prediction... Optimization, generation...",✅ 保留,High,[算法-生成][数据-策略][算法-深度],亮点：明确使用了 cGAN (条件生成对抗网络) 来生成额外样本解决数据短缺问题。是早期使用深度生成模型进行 HEA 数据增强的代表作。
+29,Structure prediction... using ensemble learning,✅ 保留,Med,[应用-相预测][算法-传统],早期的经典工作（2019），使用 Random Forest 进行精细化结构预测（BCC/FCC/Mixed）。适合作为该领域发展时间线上的基础文献。
+30,Machine Learning–Based Prediction of Complex Combination Phases...,✅ 保留,Med,[应用-相预测][数据-特征],使用 Boolean vector 编码相分类，对比了 NN/KNN 等模型。特征分析部分提到 VEC 和 Tm 的重要性。
+31,Machine learning-driven insights into phase prediction...,✅ 保留,Med,[应用-相预测][闭环验证],标准的 ML 流程（RF 最佳），并根据预测设计了新合金且进行了热力学模拟验证。
+32,A machine learning-driven framework for... generative design...,✅ 保留,High,[算法-生成/逆向][应用-力学性能],亮点：明确提出了使用 GAN (生成对抗模型) 进行新合金的生成式设计 (Generative Design)，符合“CS/算法创新”高优标准。
+33,A comprehensive strategy for phase detection... Deep Learning...,✅ 保留,Med,[算法-深度][应用-相预测],构建了 DNN 和 Voting Ensemble (投票集成) 模型。虽然使用了深度学习，但应用场景较常规。集成学习部分可作为方法论参考。
+34,Phase formability and nanomechanical properties... Combinatorial...,✅ 保留,Med,[数据-构建][应用-力学性能],结合了高通量实验 (Combinatorial) 和数据驱动方法。虽然侧重实验，但展示了如何为 ML 构建高质量数据集 (Data Generation)。
+35,Machine-learning-guided phase identification and hardness prediction...,✅ 保留,Med,[应用-相/力学][闭环验证],典型的“双目标预测”（相+硬度），并进行了实验验证（16 个相验证，12 个硬度验证）。扎实的验证工作。
+36,A two-step data augmentation method based on GAN...,✅ 保留,High,[数据-策略][算法-生成],亮点：提出了基于 GAN 的“两步法”进行数据增强 (Data Augmentation)，明确解决了硬度数据稀缺问题，优于传统 GAN。
+37,Explainable artificial intelligence approach for yield strength...,✅ 保留,High,[解释性/见解][应用-力学性能],"亮点：深度使用了 XAI (SHAP, Ceteris-Paribus plots) 来解释屈服强度随温度的变化，给出了物理冶金层面的见解 (Design Criteria)。"
+38,Exploring the influence of percolation on vacancy-mediated diffusion...,✅ 保留,Med,[算法-混合][应用-扩散],结合 ML 与 kMC (动理学蒙特卡洛) 模拟研究扩散机制。虽然属于特定物理性质研究，但展示了 ML 辅助物理模拟的潜力。
+39,Machine learning reveals the importance of... KPCA...,✅ 保留,Med,[数据-特征][算法-传统],重点在于特征工程，使用了 KPCA (核主成分分析) 进行降维和特征变换，讨论了 Miedema 理论参数的重要性。
+40,Graph representation of local environments for learning...,✅ 保留,High,[算法-深度/GNN][数据-特征],"关键亮点：提出了 LESets (Local Environment Graphs) 模型。这是针对 HEA ""无长程有序"" 特点专门设计的 GNN (图神经网络) 架构，解决了传统晶体图卷积网络在无序合金上的适用性问题，属于极具价值的算法创新。"
+41,Effects of Changing Atomic Concentration... A Causal Inference Study,✅ 保留,High,[解释性/见解][算法-创新],"关键亮点：引入了 Causal Inference (因果推断) 而非简单的统计相关性来分析元素对屈服强度的影响。在 ""可解释性"" 章节中，这是比 SHAP 更进一步的方法论探讨。"
+42,Prediction of oxygen adsorption energy... DFT and machine learning,✅ 保留,Med,[应用-化学性能][数据-构建],结合 DFT 计算与 Random Forest 预测氧吸附能（耐腐蚀性指标）。展示了 ML 在表面科学和化学性能预测中的应用。
+43,Accelerating high-entropy alloy discovery... via active learning,✅ 保留,High,[数据-策略][闭环验证],"关键亮点：明确构建了基于 Active Learning (主动学习) 的闭环探索框架。强调了 ""Exploitation vs Exploration"" 的平衡，是解决高维空间搜索问题的标准范例。"
+44,Machine-learning assisted design of... NiCoFeCrAlTi... over 1.35 GPa,✅ 保留,Med,[应用-力学性能][闭环验证],侧重于超高强度合金的发现。利用集成学习策略发现了屈服强度 >1.35 GPa 的新合金，有扎实的实验验证数据。
+45,Fatigue life prediction of... via domain knowledge-based machine learning,✅ 保留,Med,[应用-疲劳][数据-特征],"关注 疲劳寿命 (Fatigue Life) 这一较少被 ML 触及的复杂性能。特征工程中融入了 ""Domain Knowledge"" (领域知识/经验公式)，适合在特征工程章节讨论。"
+46,Multi-principal element alloy discovery using DED and machine learning,✅ 保留,Med,[数据-构建][应用-增材制造],将 ML 应用于 DED (定向能量沉积) 增材制造过程中的合金发现。适合展示 ML 如何辅助高通量制备实验 (High-Throughput Experimentation)。
+47,Accelerated design... integrating high throughput calculation and ML,✅ 保留,Med,[应用-相预测][数据-策略],"标准的 ""高通量计算 (CALPHAD/DFT) + ML"" 范式。使用 SVM 进行相分类，属于基础且扎实的方法论展示。"
+48,Predicting the stacking fault energy... based on data-driven machine learning,✅ 保留,Med,[应用-微观机制][算法-传统],预测 层错能 (SFE)。SFE 是控制变形机制（孪晶/滑移）的关键参数，该文展示了 ML 如何辅助理解微观变形机理。
+49,Ensemble-based machine learning models for phase prediction...,✅ 保留,Med,[算法-传统][应用-相预测],详细对比了 Voting 和 Stacking 等 Ensemble (集成学习) 方法在相预测中的表现。适合作为比较不同传统 ML 模型性能的基准文献。
+50,Composition Design... Based on Machine Learning (GANPro/SHAP),✅ 保留,High,[数据-策略][解释性/见解],"亮点：集大成者。使用了 GAN 进行数据增强，并使用了 SHAP 进行解释。提出了 ""GANPro"" 优化模型，属于方法论层面的微创新。"
+51,Reducing experimental dependency... prediction of Co effects...,✅ 保留,Med,[应用-力学性能][算法-传统],使用 XGBoost/RF 预测含 Co 高熵合金的力学性能。属于标准的应用研究，模型精度极高 (R2 > 0.99)，适合作为性能预测章节的成功案例。
+52,Enhanced phase prediction... through ML and data augmentation,✅ 保留,High,[数据-策略][应用-相预测],"亮点：明确使用了 GAN 对 544 条数据进行扩充，显著提升了准确率。是 ""Generative Data Augmentation"" 的典型正面案例。"
+53,Machine learning to explore HEAs... hydrogen storage...,✅ 保留,Med,[应用-化学性能][算法-传统],使用 GPR (高斯过程回归) 预测储氢性能。GPR 适合小样本且能给出不确定性，且储氢属于较少见的化学性能应用，值得收录以丰富应用广度。
+54,Explainable Machine Learning based approach... (LIME/SHAP),✅ 保留,High,[解释性/见解][闭环验证],亮点：同时使用了 LIME 和 SHAP 两种解释工具，分析非常深入。且包含实验验证环节，完全符合“可解释性”高优标准。
+55,Efficient Phase Classification... Using Machine Learning,✅ 保留,Med,[应用-相预测][数据-特征],侧重于特征筛选 (17V -> 8V) 和算法对比。适合在“特征工程”章节讨论特征冗余消除对模型泛化能力的提升。
+56,Phase prediction and experimental realisation... (Critique of SMOTE),✅ 保留,High,[数据-策略][见解/批判],关键亮点：反直觉结论。作者发现 SMOTE 增强对相预测没有显著帮助 (Critique of Synthetic Data)，并对其进行了批判。这种“负面结果”或“批判性思考”对综述极具价值，能避免一味吹捧数据增强。
+57,Neural-network model for force prediction... (3D CNN),✅ 保留,High,[算法-深度/CNN][应用-微观],亮点：算法创新。使用了 3D CNN + Voxelization (体素化) 技术来构建原子间势函数，替代传统的 DFT，属于深度学习架构的创新应用。
+58,Machine learning assisted phase prediction of refractory...,✅ 保留,Med,[应用-相预测][数据-策略],经典的 SVM 相分类应用。亮点在于融合了二元/三元数据来扩充 RHEA 小数据集，适合 Ch.4.1 相预测章节。
+59,Decoding the hidden dynamics of super-Arrhenius hydrogen...,✅ 保留,High,[算法-深度/力场][解释性/见解],"亮点：使用了 ML 力场 + 符号回归 (Symbolic Regression) 导出解析公式。符合 ""CS/算法创新"" 和 ""可解释性"" 标准。"
+60,A database of multi-principal element alloy phase-specific...,✅ 保留,Med,[数据-构建][应用-力学性能],"贡献了包含 7385 个纳米压痕测试点的开源数据集 (Hardness/Modulus)，属于扎实的 ""数据构建"" 工作。"
+61,Phase Selection Rules of Multi-Principal Element Alloys,✅ 保留,Med,[数据-特征][解释性/见解],提出了基于电负性和 VEC 的新物理描述符，并与 CNN 的黑盒特性进行了对比讨论，适合特征工程章节。
+62,Accelerated exploration... data-driven high-throughput...,✅ 保留,High,[数据-策略][算法-GNN/深度],"亮点：明确使用了 主动学习 (Active Learning) 策略，仅用 120 个 DFT 数据点预测了 12k+ 种合金，完美契合 ""小数据策略"" 标准。"
+63,Integrating atomistic simulations and machine learning...,✅ 保留,Med,[应用-力学性能][数据-特征],MD 模拟数据驱动的弹性模量预测。讨论了热力学特征与模量的非线性关系，属于标准的基础应用。
+64,Molecular dynamics simulation and machine learning...,✅ 保留,Med,[算法-深度][应用-力学性能],"比较了 SVM, KELM 和 DNN 在屈服强度预测上的表现。虽然技术常规，但对比了不同模型，适合模型选择章节。"
+65,Machine learning-based prediction of phases in HEAs,✅ 保留,Med,[数据-特征][应用-相预测],"系统的 Benchmark 工作。对比了 6 种特征选择方案和 8 种分类器 (RF, SVM, NNET 等)，对算法选择有参考价值。"
+66,EFTGAN: Elemental features and transferring corrected data augmentation...,✅ 保留,High,[算法-生成/GAN][数据-策略],"亮点：提出了 EFTGAN 框架，结合了元素卷积和 GAN 进行数据增强，明确旨在解决 ""Small Data"" 问题，是综述 ""数据策略/生成模型"" 章节的绝佳素材。"
+67,The ensemble learning algorithms for prediction HEA phases,✅ 保留,Med,[应用-相预测][算法-传统],"比较了 RF, SVM, KNN 在相分类中的表现，并进行了 XRD 实验验证。属于扎实的基础应用工作。"
+68,Data-driven design of high bulk modulus HEAs...,✅ 保留,Med,[应用-力学性能][闭环验证],"使用 XGBoost 预测体积模量 (Bulk Modulus) 并进行了实验验证 (R²=94.8%)。标准的 ""预测-验证"" 闭环案例。"
+69,Machine Learning-Based Hardness Prediction... for Laser Additive Manufacturing,✅ 保留,High,[数据-策略][算法-生成/GAN],亮点：针对 增材制造 (AM) 场景，使用了 cGAN (条件生成对抗网络) 进行数据增强以克服数据稀缺。结合了特定工艺参数 (One-Hot)，具有很强的工程应用背景。
+70,Accelerating the design... based on particle swarm optimization,✅ 保留,Med,[算法-逆向/优化][数据-特征],"结合了 PSO (粒子群优化) 和 RF 进行反向设计。虽然 RF 是基础模型，但引入元启发式算法进行寻优是 ""逆向设计"" 的典型案例。"
+71,ML correlated with phenomenological mode unlocks... eutectics,✅ 保留,Med,[数据-物理融合][应用-相预测],"特色：将 ""唯象模型 (Phenomenological Mode)"" 与 ML 结合来修正共晶成分预测。属于 ""物理引导 ML (Physics-Guided ML)"" 的范畴，值得在特征工程或模型融合章节提及。"
+72,Improving phase prediction accuracy... with Machine learning,✅ 保留,Med,[数据-预处理][数据-特征],"重点在于数据清洗和特征工程 (PCA, Correlation Analysis, Oversampling)。对 ""数据预处理"" 章节很有参考价值。"
+73,Machine learning approach to predict new multiphase HEAs,✅ 保留,Med,[应用-相预测][算法-传统],"使用 ANN 预测并制备了新合金。标准的 ""模型对比 -> 实验制备"" 流程，适合作为基础章节的案例。"
+74,Machine learning for obtaining values of thermomechanical processing parameters...,✅ 保留,High,[数据-策略][闭环验证],亮点：明确使用了 数据增强 (Data Augmentation) 技术，并针对特定屈服强度进行了 逆向设计 和实验验证 (R²=91%)。
+75,Data-driven design of high bulk modulus high entropy alloys...,✅ 保留,High,[闭环验证][应用-力学性能],"虽然使用经典的 XGBoost，但实现了完整的 ""预测 -> 实验验证"" 闭环，并成功预测了 6 种不在训练集中的新合金，属于高质量的验证工作。"
+76,Understanding stacking fault energy... by interpretable machine learning,✅ 保留,High,[算法-深度/力场][解释性/见解],"强烈推荐：结合了 ML Force Fields (ML-FF) 和 符号回归 (Symbolic Regression) 来推导 SFE 的物理公式。完美契合 ""可解释性"" 和 ""算法创新""。"
+77,ML-Based Predictions of Porosity during Cold Spray Deposition...,✅ 保留,High,[解释性/见解][应用-工艺优化],亮点：使用了 SHAP (SHapley Additive exPlanations) 解释冷喷涂工艺参数（气体类型、粉末）对孔隙率的影响。XAI 在工艺优化中的典型应用。
+78,Utilizing an intelligent machine learning strategy... tensile strength...,✅ 保留,High,[解释性/见解][应用-力学性能],"同样使用了 SHAP 分析特征贡献度，且预测精度极高 (R²>97%)。适合与文献 #25 一起作为 ""XAI 解释模型"" 的案例。"
+79,Artificial neural network applicability in studying hot deformation...,✅ 保留,Med,[数据-生成][应用-工艺优化],"利用 ANN 从有限的实验数据中生成大量的流变应力曲线数据。虽然算法基础，但体现了 ML 在 ""数据扩充"" 方面的潜力。"
+80,Phase prediction and effect of intrinsic residual strain...,✅ 保留,Med,[数据-特征][应用-相预测],"使用自组织映射 (SOM) 和特征排序发现 ""残余应变"" 是关键因子。侧重于物理特征筛选。"
+81,Machine learning-based inverse design for single-phase HEAs,✅ 保留,High,[算法-逆向][闭环验证],"提出了 逆向设计 (Inverse Design) 框架：从目标相结构反推成分。结合了 Thermo-Calc 计算和实验验证，是一个非常完整的 ""设计"" 案例。"
+82,Phase formation prediction of high-entropy alloys: a deep learning study,✅ 保留,Med,[算法-深度][应用-相预测],深度学习 (Deep Learning) 在相预测中的基准研究。适合作为 DL 与传统 ML 效果对比的素材。
+83,Predictive analytics of wear performance in high entropy alloy coatings...,✅ 保留,Med,[应用-力学/摩擦][数据-策略],"针对 涂层磨损 (Wear) 这一特定小样本场景的应用。使用 GBRT 预测磨损率，适合扩展综述中 ""力学性能"" 的覆盖范围。"
+84,Inverse design of high entropy alloys using a deep interpretable scheme...,✅ 保留,High,[算法-生成/逆向][解释性/见解],"亮点：提出了 DISMAA 框架，结合了 深度生成模型 (Deep Generative Model) 和归因分析 (Attribution Analysis) 进行逆向设计。非常适合 ""生成式 AI"" 章节。"
+85,"Unraveling phase prediction... A synergy of ML, DL, and ThermoCalc...",✅ 保留,High,[闭环验证][数据-物理融合],"亮点：直接对比了 ML/DL 与 ThermoCalc (CALPHAD) 的准确性，并进行了 实验验证。结果显示 ML 修正了 ThermoCalc 的错误分类，是论证 ""ML 优于传统计算"" 的有力证据。"
+86,Machine learning prediction of hardness...,✅ 保留,High,[解释性/见解][应用-力学性能],明确使用了 SHAP 理论解释硬度预测模型的特征贡献。标准的 XAI 应用案例。
+87,Data-driven based phase constitution prediction...,✅ 保留,Med,[数据-特征][应用-相预测],"引入了 PCA (主成分分析) 进行降维处理，并分析了决策边界。适合在 ""特征工程/降维"" 章节讨论。"
+88,Creating win-wins from strength–ductility trade-off...,✅ 保留,Med,[应用-力学性能][解释性/见解],"针对经典的 ""强度-塑性倒置 (Trade-off)"" 问题，利用多项式拟合和分类模型寻找平衡点。"
+89,Deep learning for mapping element distribution... in STEM images,✅ 保留,High,[算法-深度/CNN][数据-图像],"极具特色：不同于常见的表格数据挖掘，本文处理的是 STEM 图像数据。使用 FCN (全卷积网络) 进行语义分割以识别原子分布。这是 ""计算机视觉 (CV) + 材料表征"" 的绝佳案例。"
+90,Achieving interpretable and efficient design... via machine learning...,✅ 保留,High,[解释性/见解][闭环验证],"强力推荐：不仅实现了 ""ML预测 -> 实验验证"" 的闭环（发现了3种新合金），还重点讨论了 可解释性 (Interpretable ML) 来克服强度-塑性倒置问题。"
+91,Machine learning driven multi-objective optimization... for corrosion...,✅ 保留,High,[算法-逆向/优化][应用-其他性能],"亮点：结合了 多目标优化 (Multi-objective Optimization) 和 ML 迭代设计耐腐蚀合金。这是一个从单纯""预测""走向""复杂决策""的典型案例。"
+92,Accelerated discovery... via inverse design strategy,✅ 保留,High,[算法-逆向][解释性/见解],亮点：明确提出了 逆向设计 (Inverse Design) 策略，并结合 SHAP 分析发现了硬度突破 1000 HV 的新合金。
+93,Machine Learning Approaches for Predicting Mechanical Performance...,✅ 保留,Med,[应用-力学性能][算法-传统],"使用 ET, RF, KNN 预测难熔高熵合金的力学性能。虽然方法常规，但生成了应力-应变曲线，数据详实。"
+94,Data-driven body-centered cubic phase prediction... GANs...,✅ 保留,High,[数据-策略][算法-生成/GAN],"亮点：明确使用 GAN (生成对抗网络) 进行 数据增强 (Data Augmentation) 以解决实验数据不足的问题。完美契合综述的 ""小数据策略"" 章节。"
+95,Machine learning assisted design of Fe-Ni-Cr-Al... GRNN...,✅ 保留,Med,[应用-力学/磨损][数据-物理融合],"结合了 GRNN 模型和 MD (分子动力学) 模拟来解释磨损机制。属于 ""ML + Atomistic Simulation"" 的协同研究。"
+96,Development of single-phase BCC refractory HEAs...,✅ 保留,Med,[数据-策略][闭环验证],使用 拉丁超立方抽样 (Latin Hyper-cube Sampling) 构建数据集，这点在数据策略上值得一提。实现了实验验证。
+97,Interpretable Machine Learning Model-Based Phase Prediction...,✅ 保留,High,[解释性/见解][应用-相预测],"亮点：标题即强调 ""Interpretable""。使用 SHAP 详细分析了 ΔHmix 等物理参数对相形成的贡献度。"
+98,Yield strength prediction of high-entropy alloys using machine learning,✅ 保留,Med,[应用-力学性能][算法-传统],2020年的经典工作，使用 RF 预测高温屈服强度。适合作为早期成功应用的案例引用。
+99,A Causal Inference Approach to... Hardness of HEAs,✅ 保留,High,[解释性/见解][算法-创新],"极具创新：引入了 双重机器学习 (Double ML) 进行 因果推断 (Causal Inference)。超越了传统的""相关性""分析，定量评估了元素对硬度的""因果效应""，是提升综述深度的绝佳素材。"
+100,Predicting and Analyzing Nitrate Adsorption... Transformer & LLM,✅ 保留,High,[算法-深度/Transformer][数据-策略],亮点：使用了 Transformer 架构和 微调大语言模型 (Fine-tuned LLM) 来处理 PDF (对分布函数) 数据。展示了 NLP 领域最先进模型在材料科学中的跨界应用。
+101,Machine learning-driven design of BCC phase... coatings...,✅ 保留,Med,[应用-力学/磨损][数据-特征],使用 XGBoost/SVM 进行耐磨涂层设计。结合 DFT 解释了 Mo/Si 元素的作用机制，属于标准且扎实的应用研究。
+102,Prediction of mechanical properties... based on machine learning,✅ 保留,Med,[数据-生成/MD][数据-特征],特色：利用 MD (分子动力学) 模拟生成了 1000 个数据点作为 ML 训练集，解决了实验数据不足的问题。对比了 PCA 和 Spearman 特征选择的效果。
+103,Interpretable phase structure and hardness prediction...,✅ 保留,Med,[算法-集成学习][解释性/见解],提出了 Stacking 集成模型 (RF+XGB+CatBoost)，并强调了特征权重的可解释性。进行了实验验证。
+104,Machine Learning-Driven Prediction of Wear Rate...,✅ 保留,Med,[应用-力学/磨损][模型-对比],"对比了 10 种 ML 模型（包括 BNN, CatBoost 等）预测热喷涂涂层的磨损率。包含详细的特征共线性分析 (VIF)。"
+105,Elastic constants from charge density... using CNN and DFT,✅ 保留,High,[算法-深度/CNN][数据-特征],亮点：使用 3D-CNN 直接学习 DFT 计算出的 电荷密度 (Charge Density) 3D 体素数据，而非人工设计的标量特征。实现了从二元/三元到高熵合金的 迁移学习。
+106,High entropy alloys for hydrogen storage applications...,✅ 保留,Med,[应用-功能材料][算法-传统],针对 储氢 (Hydrogen Storage) 这一功能特性的应用。筛选出 774 种潜在合金，拓展了综述的应用领域（不仅限于力学）。
+107,Enhancing flow stress predictions... conventional and ML,✅ 保留,Med,[应用-力学性能][模型-物理对比],"对比了 ML 模型与传统物理本构方程 (Johnson-Cook, Arrhenius) 在流变应力预测上的表现，证明 ML 在处理复杂非线性关系上的优势。"
+108,Machine Learning-Based Classification... Intermetallic Phases,✅ 保留,Med,[应用-相预测][闭环验证],专注于较难预测的 金属间化合物 (IM) 相。验证环节非常扎实，合成了 86 种新合金来检验模型准确性。
